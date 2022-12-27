@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "title": "HYPEBEAST",
+    "url": "https://feeds.feedburner.com/hypebeast/feed/"
+  },
+  {
+    "id": 1,
+    "title": "WIRED",
+    "url": "https://www.wired.com/feed/rss"
+  },
+  {
+    "id": 2,
+    "title": "The Hackers News",
+    "url": "https://feeds.feedburner.com/TheHackersNews"
+  },
+  {
+    "id": 3,
+    "title": "SABC News - South Africa",
+    "url": "https://www.sabcnews.com/sabcnews/category/south-africa/feed/"
+  }
+]
