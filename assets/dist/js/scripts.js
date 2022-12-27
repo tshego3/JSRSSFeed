@@ -48,14 +48,6 @@ $.ajax({
                                 imgUrl3: trycatch(() => $this.find('enclosure, enclosure').attr('url'), null)
                         };
 
-                        // $('#banner').append(
-                        //     '<h1 class="fw-light">'+ +'</h1>' +
-                        //     '<p class="lead text-muted">'+ +'</p>' +
-                        //     '<p>' +
-                        //         '<a href="#" class="btn btn-primary my-2">View</a>' +
-                        //     '</p>'
-                        // );
-
                         $('#cards').append(
                             '<div class="col">' +
                                 '<div class=\"card shadow-sm\">' +
