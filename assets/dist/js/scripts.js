@@ -23,7 +23,9 @@ $.ajax({
         $.each(json, function (i, item) {
             rssFeeds.push(new RssFeedModel(item.id, item.title, item.url));
             $('#feeds').append(
-                '<li><a href=\"?id='+ item.id +'\" class=\"text-white\">'+ item.title +'</a></li>'
+                '<li class="nav-item">' + 
+                    '<a class="nav-link" href=\"?id='+ item.id +'\">'+ item.title +'</a>' +
+                '</li>'
             );
         });
 
