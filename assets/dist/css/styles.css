@@ -49,6 +49,11 @@
     -webkit-overflow-scrolling: touch;
 }
 
+#cards-container {
+    padding-top: 24px;
+    padding-bottom: 81px;
+}
+
 .card-body p img {
     width: 100% !important;
     height: 100% !important;

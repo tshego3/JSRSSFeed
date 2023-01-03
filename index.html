@@ -19,7 +19,7 @@
 
 <body>
     <main>
-        <div class="album py-5 bg-light-subtle">
+        <div class="album bg-light-subtle" id="cards-container">
             <div class="container">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="cards">
                 </div>
@@ -27,7 +27,7 @@
         </div>
     </main>
 
-    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar fixed-bottom navbar-dark bg-dark border-top">
         <div class="container">
             <a href="#" class="navbar-brand d-flex align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="me-2"
@@ -39,12 +39,12 @@
                 </svg>
                 <strong>JS RSS Feed</strong>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ms-auto" id="feeds">
+            <div class="navbar-collapse collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2" id="feeds">
                 </ul>
             </div>
         </div>

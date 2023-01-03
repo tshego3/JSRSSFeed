@@ -11,21 +11,26 @@
   },
   {
     "id": 2,
+    "title": "WRC News",
+    "url": "https://www.wrc.com/templates/generated/1/raw/en.xml"
+  },
+  {
+    "id": 3,
     "title": "ESPN - RPM",
     "url": "https://www.espn.com/espn/rss/rpm/news/"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "ESPN - Soccer",
     "url": "https://www.espn.com/espn/rss/soccer/news/"
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "The Hackers News",
     "url": "https://feeds.feedburner.com/TheHackersNews"
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "SABC News - South Africa",
     "url": "https://www.sabcnews.com/sabcnews/category/south-africa/feed/"
   }

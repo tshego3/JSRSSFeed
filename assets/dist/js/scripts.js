@@ -33,6 +33,8 @@ $.ajax({
 
         if (rssFeed != null) {
             $.ajax({
+                async: false,
+                global: false,
                 url: 'https://api.codetabs.com/v1/proxy/?quest=' + rssFeed.url,
                 dataType: 'xml',
                 success: function(data){
