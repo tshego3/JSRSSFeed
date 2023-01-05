@@ -54,7 +54,12 @@
     padding-bottom: 81px;
 }
 
-.card-body p img {
+img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+iframe {
     width: 100% !important;
     height: 100% !important;
 }

@@ -26,12 +26,42 @@
   },
   {
     "id": 5,
+    "title": "Kreative Kornerr",
+    "url": "https://kreativekornerr.co.za/feed/"
+  },
+  {
+    "id": 6,
     "title": "The Hackers News",
     "url": "https://feeds.feedburner.com/TheHackersNews"
   },
   {
-    "id": 6,
+    "id": 7,
+    "title": "Runtastic - Cardio",
+    "url": "https://www.runtastic.com/blog/en/category/cardio/feed/"
+  },
+  {
+    "id": 8,
+    "title": "Runtastic - Strength",
+    "url": "https://www.runtastic.com/blog/en/category/strength/feed/"
+  },
+  {
+    "id": 9,
+    "title": "Runtastic - Nutrition",
+    "url": "https://www.runtastic.com/blog/en/category/nutrition/feed/"
+  },
+  {
+    "id": 10,
+    "title": "Runtastic - Daily-Habits",
+    "url": "https://www.runtastic.com/blog/en/category/daily-habits/feed/"
+  },
+  {
+    "id": 11,
     "title": "SABC News - South Africa",
     "url": "https://www.sabcnews.com/sabcnews/category/south-africa/feed/"
+  },
+  {
+    "id": 12,
+    "title": "GQ - Section Feed For All Content",
+    "url": "https://rss.iol.io/gq/all-content-feed"
   }
 ]

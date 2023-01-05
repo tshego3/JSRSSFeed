@@ -45,17 +45,18 @@ $.ajax({
                                 title: $this.find("title").text(),
                                 link: $this.find("link").text(),
                                 description: $this.find("description").text(),
+                                contentEncoded: trycatch(() => $this.find('content\\:encoded, encoded').text(), null),
                                 pubDate: $this.find("pubDate").text(),
                                 imgUrl0: trycatch(() => $this.find('image').text(), null),
-                                imgUrl1: trycatch(() => $this.find('media\\:thumbnail, thumbnail').attr('url'), null),
-                                imgUrl2: trycatch(() => $this.find('media\\:content, content').attr('url'), null),
-                                imgUrl3: trycatch(() => $this.find('enclosure, enclosure').attr('url'), null)
-                        };
+                                imgUrl1: trycatch(() => $this.find('media\\:content, content').attr('url'), null),
+                                imgUrl2: trycatch(() => $this.find('enclosure, enclosure').attr('url'), null),
+                                imgUrl3: trycatch(() => $this.find('media\\:thumbnail, thumbnail').attr('url'), null)
+                            };
 
                         $('#cards').append(
                             '<div class="col">' +
                                 '<div class=\"card shadow-sm\">' +
-                                    (rssFeed.id == 0 ?
+                                    (rssFeed.id == 0 || rssFeed.id == 5 || rssFeed.id == 7 || rssFeed.id == 8 || rssFeed.id == 9 || rssFeed.id == 10 ?
                                         ""
                                     :
                                         (item.imgUrl0 == "" || item.imgUrl0 == null || item.imgUrl0 == undefined ?
@@ -84,7 +85,7 @@ $.ajax({
                                     ) +
                                     '<div class=\"card-body\">' +
                                         '<h5 class=\"card-title\">'+ item.title +'</h5>' +
-                                        '<p class=\"card-text\">'+ item.description +'</p>' +
+                                        '<p class=\"card-text\">'+ (rssFeed.id != 5 ? item.description : item.contentEncoded) +'</p>' +
                                         '<div class=\"d-flex justify-content-between align-items-center\">' +
                                             '<div class="btn-group\">' +
                                                 '<a href=\"'+ item.link +'\" class=\"btn btn-sm btn-outline-secondary\" target=\"_blank\">View</a>' +
