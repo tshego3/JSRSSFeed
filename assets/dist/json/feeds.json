@@ -41,16 +41,21 @@
       },
       {
         "id": 4.2,
+        "title": "TechCrunch",
+        "url": "https://techcrunch.com/feed/"
+      },
+      {
+        "id": 4.3,
         "title": "FRESHMENMAG",
         "url": "https://freshmenmag.co.za/feed/"
       },
       {
-        "id": 4.3,
+        "id": 4.4,
         "title": "CultureCollecter",
         "url": "https://culturecollecter.co.za/feed/"
       },
       {
-        "id": 4.4,
+        "id": 4.5,
         "title": "Kreative Kornerr",
         "url": "https://kreativekornerr.co.za/feed/"
       }

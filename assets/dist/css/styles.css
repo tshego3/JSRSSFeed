@@ -63,3 +63,24 @@ iframe {
     width: 100% !important;
     height: 100% !important;
 }
+
+@media (max-width: 400px) {
+    .wp-caption.aligncenter {
+        max-width: 317px !important;
+        height: 100% !important;
+    }
+    .wp-caption.alignnone {
+        max-width: 317px !important;
+        height: 100% !important;
+    }
+}
+@media (min-width: 401px) {
+    .wp-caption.aligncenter {
+        max-width: 387.33px !important;
+        height: 100% !important;
+    }
+    .wp-caption.alignnone {
+        max-width: 387.33px !important;
+        height: 100% !important;
+    }
+}

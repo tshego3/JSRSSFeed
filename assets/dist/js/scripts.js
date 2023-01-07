@@ -95,7 +95,7 @@ $.ajax({
                         $('#cards').append(
                             '<div class="col">' +
                                 '<div class=\"card shadow-sm\">' +
-                                    (rssFeed.id == 0 || rssFeed.id == 4.4 || rssFeed.id == 6.1 || rssFeed.id == 6.2 || rssFeed.id == 6.3 || rssFeed.id == 6.4 ?
+                                    (rssFeed.id == 0 || rssFeed.id == 4.2 || rssFeed.id == 4.5 || rssFeed.id == 6.1 || rssFeed.id == 6.2 || rssFeed.id == 6.3 || rssFeed.id == 6.4 ?
                                         ""
                                     :
                                         (item.imgUrl0 == "" || item.imgUrl0 == null || item.imgUrl0 == undefined ?
@@ -124,7 +124,7 @@ $.ajax({
                                     ) +
                                     '<div class=\"card-body\">' +
                                         '<h5 class=\"card-title\">'+ item.title +'</h5>' +
-                                        '<p class=\"card-text\">'+ (rssFeed.id == 4.4 ? item.contentEncoded : item.description) +'</p>' +
+                                        '<p class=\"card-text\">'+ (rssFeed.id == 4.2 || rssFeed.id == 4.5 ? item.contentEncoded : item.description) +'</p>' +
                                         '<div class=\"d-flex justify-content-between align-items-center\">' +
                                             '<div class="btn-group\">' +
                                                 '<a href=\"'+ item.link +'\" class=\"btn btn-sm btn-outline-secondary\" target=\"_blank\">View</a>' +
