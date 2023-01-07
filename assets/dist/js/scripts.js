@@ -41,7 +41,7 @@ $.ajax({
     dataType: 'json',
     success: function(json){
         $.each(json, function (i, item) {
-            if (item.id == 3 || item.id == 6) {
+            if (item.id == 3|| item.id == 4 || item.id == 6) {
                 $.each(item.categories, function (ii, category) {
                     rssFeeds.push(new RssFeedModel(category.id, category.title, category.url));
                 });
@@ -51,7 +51,7 @@ $.ajax({
             }
             
             $('#feeds').append(
-                (item.id == 3 || item.id == 6 ?
+                (item.id == 3 || item.id == 4 || item.id == 6 ?
                     '<li class=\"nav-item dropdown\">' +
                         '<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">' +
                             item.title +
@@ -95,7 +95,7 @@ $.ajax({
                         $('#cards').append(
                             '<div class="col">' +
                                 '<div class=\"card shadow-sm\">' +
-                                    (rssFeed.id == 0 || rssFeed.id == 4 || rssFeed.id == 6.1 || rssFeed.id == 6.2 || rssFeed.id == 6.3 || rssFeed.id == 6.4 ?
+                                    (rssFeed.id == 0 || rssFeed.id == 4.4 || rssFeed.id == 6.1 || rssFeed.id == 6.2 || rssFeed.id == 6.3 || rssFeed.id == 6.4 ?
                                         ""
                                     :
                                         (item.imgUrl0 == "" || item.imgUrl0 == null || item.imgUrl0 == undefined ?
@@ -124,7 +124,7 @@ $.ajax({
                                     ) +
                                     '<div class=\"card-body\">' +
                                         '<h5 class=\"card-title\">'+ item.title +'</h5>' +
-                                        '<p class=\"card-text\">'+ (rssFeed.id == 4 ? item.contentEncoded : item.description) +'</p>' +
+                                        '<p class=\"card-text\">'+ (rssFeed.id == 4.4 ? item.contentEncoded : item.description) +'</p>' +
                                         '<div class=\"d-flex justify-content-between align-items-center\">' +
                                             '<div class="btn-group\">' +
                                                 '<a href=\"'+ item.link +'\" class=\"btn btn-sm btn-outline-secondary\" target=\"_blank\">View</a>' +

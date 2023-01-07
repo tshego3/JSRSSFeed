@@ -32,8 +32,29 @@
   },
   {
     "id": 4,
-    "title": "Kreative Kornerr",
-    "url": "https://kreativekornerr.co.za/feed/"
+    "title": "The Culture News",
+    "categories": [
+      {
+        "id": 4.1,
+        "title": "GQ",
+        "url": "https://rss.iol.io/gq/all-content-feed"
+      },
+      {
+        "id": 4.2,
+        "title": "FRESHMENMAG",
+        "url": "https://freshmenmag.co.za/feed/"
+      },
+      {
+        "id": 4.3,
+        "title": "CultureCollecter",
+        "url": "https://culturecollecter.co.za/feed/"
+      },
+      {
+        "id": 4.4,
+        "title": "Kreative Kornerr",
+        "url": "https://kreativekornerr.co.za/feed/"
+      }
+    ]
   },
   {
     "id": 5,
@@ -70,10 +91,5 @@
     "id": 7,
     "title": "SABC News - South Africa",
     "url": "https://www.sabcnews.com/sabcnews/category/south-africa/feed/"
-  },
-  {
-    "id": 8,
-    "title": "GQ - Section Feed For All Content",
-    "url": "https://rss.iol.io/gq/all-content-feed"
   }
 ]
