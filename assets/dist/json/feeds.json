@@ -11,28 +11,38 @@
   },
   {
     "id": 2,
-    "title": "WRC News",
-    "url": "https://www.wrc.com/templates/generated/1/raw/en.xml"
+    "title": "MY BROAD BAND",
+    "url": "https://mybroadband.co.za/news/feed"
   },
   {
     "id": 3,
-    "title": "ESPN - News",
+    "title": "Sports",
     "categories": [
       {
         "id": 3.1,
-        "title": "RPM",
+        "title": "ESPN - RPM",
         "url": "https://www.espn.com/espn/rss/rpm/news/"
       },
       {
         "id": 3.2,
-        "title": "Soccer",
+        "title": "ESPN - Soccer",
         "url": "https://www.espn.com/espn/rss/soccer/news/"
+      },
+      {
+        "id": 3.3,
+        "title": "",
+        "url": "https://www.wrc.com/templates/generated/1/raw/en.xml"
+      },
+      {
+        "id": 3.4,
+        "title": "CARMAG",
+        "url": "https://www.carmag.co.za/news/feed/"
       }
     ]
   },
   {
     "id": 4,
-    "title": "The Culture News",
+    "title": "News",
     "categories": [
       {
         "id": 4.1,
