@@ -82,7 +82,7 @@
       {
         "id": 4.6,
         "title": "News 24",
-        "url": "https://feed.24.com/articles/news24/TopStories/rss"
+        "url": "https://feeds.24.com/articles/news24/TopStories/rss"
       },
       {
         "id": 4.7,
@@ -112,7 +112,7 @@
       },
       {
         "id": 5.4,
-        "title": "stackoverflow",
+        "title": "Stack Overflow",
         "url": "https://stackoverflow.blog/feed"
       },
       {
