@@ -41,7 +41,7 @@ $.ajax({
     dataType: 'json',
     success: function(json){
         $.each(json, function (i, item) {
-            if (item.id == 3|| item.id == 4 || item.id == 6) {
+            if (item.id == 3 || item.id == 4 || item.id == 5 || item.id == 6) {
                 $.each(item.categories, function (ii, category) {
                     rssFeeds.push(new RssFeedModel(category.id, category.title, category.url));
                 });
