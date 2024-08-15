@@ -25,8 +25,8 @@
       },
       {
         "id": 3.2,
-        "title": "News24 Sport",
-        "url": "https://feeds.capi24.com/v1/Search/articles/sport/featured/topstories/rss"
+        "title": "News24 Sport - Soccer",
+        "url": "https://feeds.capi24.com/v1/Search/articles/sport/soccer/rss"
       },
       {
         "id": 3.3,
