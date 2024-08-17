@@ -157,13 +157,8 @@
       },
       {
         "id": 5.12,
-        "title": "GeeksforGeeks",
-        "url": "https://www.geeksforgeeks.org/feed/"
-      },
-      {
-        "id": 5.13,
-        "title": "Quastor",
-        "url": "https://blog.quastor.org/"
+        "title": "freeCodeCamp.org",
+        "url": "https://www.freecodecamp.org/news/rss/"
       }
     ]
   },
