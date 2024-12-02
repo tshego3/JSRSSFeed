@@ -159,6 +159,11 @@
         "id": 5.12,
         "title": "freeCodeCamp.org",
         "url": "https://www.freecodecamp.org/news/rss/"
+      },
+      {
+        "id": 5.13,
+        "title": "StationX - Cyber Security Blog",
+        "url": "https://www.stationx.net/blog/feed/"
       }
     ]
   },
