@@ -164,6 +164,11 @@
         "id": 5.13,
         "title": "StationX - Cyber Security Blog",
         "url": "https://www.stationx.net/blog/feed/"
+      },
+      {
+        "id": 5.14,
+        "title": "ByteByteGo Newsletter",
+        "url": "https://blog.bytebytego.com/feed"
       }
     ]
   },

@@ -74,7 +74,7 @@ $.ajax({
             $.ajax({
                 async: false,
                 global: false,
-                url: 'https://api.codetabs.com/v1/proxy/?quest=' + rssFeed.url,
+                url: 'https://rss-proxy-api.netlify.app/.netlify/functions/rss-proxy?url=' + rssFeed.url,
                 dataType: 'xml',
                 success: function(data){
                     var $xml = $(data);
