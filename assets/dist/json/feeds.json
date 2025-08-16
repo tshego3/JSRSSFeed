@@ -12,7 +12,7 @@
   {
     "id": 2,
     "title": "MyBroadband",
-    "url": "https://mybroadband.co.za/news/feed"
+    "url": "https://api.codetabs.com/v1/proxy/?quest=https://mybroadband.co.za/news/feed"
   },
   {
     "id": 3,
@@ -41,7 +41,7 @@
       {
         "id": 3.5,
         "title": "TopAuto",
-        "url": "https://topauto.co.za/news/feed/"
+        "url": "https://api.codetabs.com/v1/proxy/?quest=https://topauto.co.za/news/feed/"
       },
       {
         "id": 3.6,
