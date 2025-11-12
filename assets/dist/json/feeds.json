@@ -93,6 +93,11 @@
         "id": 4.8,
         "title": "Daily Maverick",
         "url": "https://www.dailymaverick.co.za/dmrss"
+      },
+      {
+        "id": 4.9,
+        "title": "BusinessTech",
+        "url": "https://businesstech.co.za/news/rss"
       }
     ]
   },
