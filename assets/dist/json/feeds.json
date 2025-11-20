@@ -98,6 +98,16 @@
         "id": 4.9,
         "title": "BusinessTech",
         "url": "https://businesstech.co.za/news/rss"
+      },
+      {
+        "id": 4.10,
+        "title": "Daily Investor",
+        "url": "https://dailyinvestor.com/feed/"
+      },
+      {
+        "id": 4.11,
+        "title": "MDN News",
+        "url": "https://mdntvlive.com/category/mdn-news/feed/"
       }
     ]
   },
