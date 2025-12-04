@@ -77,7 +77,7 @@ async function init() {
     const queryParams = new URLSearchParams(window.location.search);
     const id = queryParams.get("id");
 
-    const feed = rssFeed.find(
+    const feed = rssFeeds.find(
       (item) => item.id === (id === "" ? 0 : Number(id))
     );
 
