@@ -97,15 +97,15 @@
       {
         "id": 4.9,
         "title": "BusinessTech",
-        "url": "https://businesstech.co.za/news/rss"
-      },
-      {
-        "id": 4.10,
-        "title": "Daily Investor",
-        "url": "https://dailyinvestor.com/feed/"
+        "url": "https://api.codetabs.com/v1/proxy/?quest=https://businesstech.co.za/news/rss"
       },
       {
         "id": 4.11,
+        "title": "Daily Investor",
+        "url": "https://api.codetabs.com/v1/proxy/?quest=https://dailyinvestor.com/feed/"
+      },
+      {
+        "id": 4.12,
         "title": "MDN News",
         "url": "https://mdntvlive.com/category/mdn-news/feed/"
       }
@@ -161,27 +161,27 @@
         "url": "https://www.c-sharpcorner.com/rss/news.aspx"
       },
       {
-        "id": 5.10,
+        "id": 5.11,
         "title": "Syncfusion C-Sharp",
         "url": "https://www.syncfusion.com/blogs/category/c-sharp/feed"
       },
       {
-        "id": 5.11,
+        "id": 5.12,
         "title": "Sitepoint",
         "url": "https://sitepoint.com/sitepoint.rss"
       },
       {
-        "id": 5.12,
+        "id": 5.13,
         "title": "freeCodeCamp.org",
         "url": "https://www.freecodecamp.org/news/rss/"
       },
       {
-        "id": 5.13,
+        "id": 5.14,
         "title": "StationX - Cyber Security Blog",
         "url": "https://www.stationx.net/blog/feed/"
       },
       {
-        "id": 5.14,
+        "id": 5.15,
         "title": "ByteByteGo Newsletter",
         "url": "https://blog.bytebytego.com/feed"
       }

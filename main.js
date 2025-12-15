@@ -57,20 +57,20 @@ async function init() {
       $("#feeds").append(
         item.id == 3 || item.id == 4 || item.id == 5 || item.id == 6
           ? '<li class="nav-item dropdown">' +
-              '<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">' +
-              item.title +
-              "</a>" +
-              '<ul class="dropdown-menu">' +
-              getDropDownLinks(item) +
-              "</ul>" +
-              "</li>"
+          '<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">' +
+          item.title +
+          "</a>" +
+          '<ul class="dropdown-menu">' +
+          getDropDownLinks(item) +
+          "</ul>" +
+          "</li>"
           : '<li class="nav-item">' +
-              '<a class="nav-link" href="?id=' +
-              item.id +
-              '">' +
-              item.title +
-              "</a>" +
-              "</li>"
+          '<a class="nav-link" href="?id=' +
+          item.id +
+          '">' +
+          item.title +
+          "</a>" +
+          "</li>"
       );
     });
 
@@ -80,6 +80,16 @@ async function init() {
     const feed = rssFeeds.find(
       (item) => item.id === (id === "" ? 0 : Number(id))
     );
+
+    document.title = feed.title;
+    document.getElementById("feed-title").textContent = feed.title;
+
+    $("#feeds a.nav-link, #feeds a.dropdown-item").each(function () {
+      const hrefId = new URLSearchParams(this.href.split("?")[1]).get("id");
+      if (Number(hrefId) === feed.id) {
+        $(this).addClass("active");
+      }
+    });
 
     const xmlData = await fetch(
       `https://rss-proxy-api.netlify.app/.netlify/functions/rss-proxy?url=${feed.url}`
