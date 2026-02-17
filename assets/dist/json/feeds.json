@@ -12,7 +12,7 @@
   {
     "id": 2,
     "title": "MyBroadband",
-    "url": "https://mybroadband.co.za/news/feed"
+    "url": "https://corsproxy.io/?url=https://mybroadband.co.za/news/feed"
   },
   {
     "id": 3,
