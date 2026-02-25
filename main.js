@@ -92,7 +92,7 @@ async function init() {
     });
 
     const xmlData = await fetch(
-      `https://rss-proxy-api.netlify.app/.netlify/functions/rss-proxy?url=${feed.url}`
+      `https://rss-proxy-api.netlify.app/.netlify/functions/rss-proxy?url=${encodeURIComponent(feed.url)}`
     );
     const xml = await xmlData.text();
     const parser = new DOMParser();
