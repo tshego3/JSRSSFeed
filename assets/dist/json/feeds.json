@@ -12,7 +12,7 @@
   {
     "id": 2,
     "title": "MyBroadband",
-    "url": "https://corsproxy.io/?url=https://mybroadband.co.za/news/feed"
+    "url": "https://mybroadband.co.za/news/feed"
   },
   {
     "id": 3,
@@ -41,7 +41,7 @@
       {
         "id": 3.5,
         "title": "TopAuto",
-        "url": "https://api.codetabs.com/v1/proxy/?quest=https://topauto.co.za/news/feed/"
+        "url": "https://topauto.co.za/news/feed/"
       },
       {
         "id": 3.6,
@@ -97,12 +97,12 @@
       {
         "id": 4.9,
         "title": "BusinessTech",
-        "url": "https://api.codetabs.com/v1/proxy/?quest=https://businesstech.co.za/news/rss"
+        "url": "https://businesstech.co.za/news/rss"
       },
       {
         "id": 4.11,
         "title": "Daily Investor",
-        "url": "https://api.codetabs.com/v1/proxy/?quest=https://dailyinvestor.com/feed/"
+        "url": "https://dailyinvestor.com/feed/"
       },
       {
         "id": 4.12,

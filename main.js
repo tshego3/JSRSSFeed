@@ -94,6 +94,26 @@ async function init() {
     const xmlData = await fetch(
       `https://rss-proxy-api.netlify.app/.netlify/functions/rss-proxy?url=${encodeURIComponent(feed.url)}`
     );
+
+    if (!xmlData.ok) {
+      let errorMsg = `Failed to load feed (HTTP ${xmlData.status})`;
+      try {
+        const errorJson = await xmlData.json();
+        errorMsg = errorJson.error || errorMsg;
+      } catch (_) { }
+      container.innerHTML = `
+        <div class="col-12">
+          <div class="alert alert-warning d-flex align-items-center" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+            <div>
+              <strong>Feed unavailable:</strong> ${errorMsg}
+              <br><small class="text-muted">Try selecting a different feed or refreshing later.</small>
+            </div>
+          </div>
+        </div>`;
+      return;
+    }
+
     const xml = await xmlData.text();
     const parser = new DOMParser();
     const xmlDoc = parser.parseFromString(xml, "application/xml");
