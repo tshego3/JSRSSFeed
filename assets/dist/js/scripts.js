@@ -74,7 +74,7 @@ $.ajax({
             $.ajax({
                 async: false,
                 global: false,
-                url: 'https://rss-proxy-api.netlify.app/.netlify/functions/rss-proxy?url=' + encodeURIComponent(rssFeed.url),
+                url: 'https://rss-proxy-api.netlify.app/.netlify/functions/fetch-xml?url=' + encodeURIComponent(rssFeed.url),
                 dataType: 'xml',
                 success: function (data) {
                     var $xml = $(data);

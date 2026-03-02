@@ -92,7 +92,7 @@ async function init() {
     });
 
     const xmlData = await fetch(
-      `https://rss-proxy-api.netlify.app/.netlify/functions/rss-proxy?url=${encodeURIComponent(feed.url)}`
+      `https://rss-proxy-api.netlify.app/.netlify/functions/fetch-xml?url=${encodeURIComponent(feed.url)}`
     );
 
     if (!xmlData.ok) {
