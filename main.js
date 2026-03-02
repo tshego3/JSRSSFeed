@@ -91,23 +91,48 @@ async function init() {
       }
     });
 
-    const xmlData = await fetch(
-      `https://rss-proxy-api.netlify.app/.netlify/functions/fetch-xml?url=${encodeURIComponent(feed.url)}`
-    );
+    let xmlData;
+    let fallbackAttempted = false;
+
+    try {
+      xmlData = await fetch(
+        `https://rss-proxy-api.netlify.app/.netlify/functions/fetch-xml?url=${encodeURIComponent(feed.url)}`
+      );
+
+      if (!xmlData.ok) {
+        console.warn(`Proxy failed for ${feed.title} (HTTP ${xmlData.status}). Attempting direct fetch...`);
+        fallbackAttempted = true;
+        xmlData = await fetch(feed.url);
+      }
+    } catch (e) {
+      if (!fallbackAttempted) {
+        console.warn(`Proxy network error for ${feed.title}. Attempting direct fetch...`);
+        try {
+          xmlData = await fetch(feed.url);
+        } catch (innerError) {
+          xmlData = { ok: false, status: 'Network Error' };
+        }
+      } else {
+        xmlData = { ok: false, status: 'Network Error' };
+      }
+    }
 
     if (!xmlData.ok) {
       let errorMsg = `Failed to load feed (HTTP ${xmlData.status})`;
       try {
-        const errorJson = await xmlData.json();
-        errorMsg = errorJson.error || errorMsg;
+        if (typeof xmlData.json === 'function') {
+          const errorJson = await xmlData.json();
+          errorMsg = errorJson.error || errorMsg;
+        }
       } catch (_) { }
+
       container.innerHTML = `
         <div class="col-12">
           <div class="alert alert-warning d-flex align-items-center" role="alert">
             <i class="bi bi-exclamation-triangle-fill me-2"></i>
             <div>
               <strong>Feed unavailable:</strong> ${errorMsg}
-              <br><small class="text-muted">Try selecting a different feed or refreshing later.</small>
+              <br><small class="text-muted">This feed might be blocked by browser security (CORS) or the server might be down.</small>
             </div>
           </div>
         </div>`;
