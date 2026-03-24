@@ -92,28 +92,38 @@ async function init() {
     });
 
     let xmlData;
-    let fallbackAttempted = false;
 
     try {
+      // Attempt 1: Netlify Proxy
       xmlData = await fetch(
         `https://rss-proxy-api.netlify.app/.netlify/functions/fetch-xml?url=${encodeURIComponent(feed.url)}`
       );
 
+      // Attempt 2: Codetabs Proxy (if Netlify fails)
       if (!xmlData.ok) {
-        console.warn(`Proxy failed for ${feed.title} (HTTP ${xmlData.status}). Attempting direct fetch...`);
-        fallbackAttempted = true;
+        console.warn(`Netlify proxy failed (${xmlData.status}) for ${feed.title}. Trying Codetabs proxy...`);
+        xmlData = await fetch(`https://api.codetabs.com/v1/proxy/?quest=${encodeURIComponent(feed.url)}`);
+      }
+
+      // Attempt 3: Direct Fetch (if both proxies fail)
+      if (!xmlData.ok) {
+        console.warn(`Codetabs proxy failed (${xmlData.status}). Attempting direct fetch...`);
         xmlData = await fetch(feed.url);
       }
     } catch (e) {
-      if (!fallbackAttempted) {
-        console.warn(`Proxy network error for ${feed.title}. Attempting direct fetch...`);
+      console.warn(`Network error during initial fetch attempts. Trying fallbacks...`);
+      try {
+        // Fallback to Codetabs if Netlify errored out
+        xmlData = await fetch(`https://api.codetabs.com/v1/proxy/?quest=${encodeURIComponent(feed.url)}`);
+        if (!xmlData.ok) {
+          xmlData = await fetch(feed.url);
+        }
+      } catch (innerError) {
         try {
           xmlData = await fetch(feed.url);
-        } catch (innerError) {
+        } catch (directError) {
           xmlData = { ok: false, status: 'Network Error' };
         }
-      } else {
-        xmlData = { ok: false, status: 'Network Error' };
       }
     }
 
