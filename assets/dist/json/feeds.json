@@ -212,5 +212,41 @@
         "url": "https://www.runtastic.com/blog/en/category/daily-habits/feed/"
       }
     ]
+  },
+  {
+    "id": 7,
+    "title": "Reddit",
+    "categories": [
+      {
+        "id": 7.1,
+        "title": "C#",
+        "url": "https://www.reddit.com/r/csharp.rss"
+      },
+      {
+        "id": 7.2,
+        "title": ".NET",
+        "url": "https://www.reddit.com/r/dotnet.rss"
+      },
+      {
+        "id": 7.3,
+        "title": "South Africa",
+        "url": "https://www.reddit.com/r/southafrica.rss"
+      },
+      {
+        "id": 7.4,
+        "title": "Programmer Humor",
+        "url": "https://www.reddit.com/r/ProgrammerHumor.rss"
+      },
+      {
+        "id": 7.5,
+        "title": "Sportscar Racing",
+        "url": "https://www.reddit.com/r/Sportscar_Racing.rss"
+      },
+      {
+        "id": 7.6,
+        "title": "D365 Finance Operations",
+        "url": "https://www.reddit.com/r/D365FinanceOperations.rss"
+      }
+    ]
   }
 ]
