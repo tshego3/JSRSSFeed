@@ -224,6 +224,11 @@
       },
       {
         "id": 7.2,
+        "title": "UFC",
+        "url": "https://www.reddit.com/r/ufc.rss"
+      },
+      {
+        "id": 7.3,
         "title": ".NET",
         "url": "https://www.reddit.com/r/dotnet.rss"
       },
