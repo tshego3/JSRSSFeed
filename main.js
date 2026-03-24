@@ -55,7 +55,7 @@ async function init() {
       }
 
       $("#feeds").append(
-        item.id == 3 || item.id == 4 || item.id == 5 || item.id == 6
+        item.id == 3 || item.id == 4 || item.id == 5 || item.id == 6 || item.id == 7
           ? '<li class="nav-item dropdown">' +
           '<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">' +
           item.title +
